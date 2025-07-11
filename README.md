@@ -110,8 +110,8 @@ The project is demonstrated through a series of Jupyter notebooks. They are desi
 
 Here are some examples of the model's performance on test images.
 
-`![First_demo](deeplearning\photos\car_removal.png)`
-`![First_demo](deeplearning\photos\cars_removal.png)`
+`![car_removal](photos\car_removal.png)`
+`![cars_removal](photos\cars_removal.png)`
 
 ---
 
