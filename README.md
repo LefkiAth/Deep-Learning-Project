@@ -46,6 +46,7 @@ The repository is organized as follows:
 │   ├── 02_Segmentation_Model.ipynb       # Builds, trains, and evaluates the U-Net model.
 │   ├── 03_Inpainting_Model.ipynb         # Builds, trains, and evaluates the inpainting GAN.
 │   └── 04_Final_Pipeline_Demo.ipynb      # Runs the full pipeline on sample images.
+├── photos/                               # Contains 2 photos of the project implementation.
 ├── paper/                                # Contains the paper of the project.
 ├── requirements/                         # Packages needed for the execution.
 └── README.md                             # This file.
