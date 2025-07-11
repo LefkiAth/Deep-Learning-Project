@@ -23,7 +23,7 @@ A deep learning project that demonstrates a two-stage pipeline for object remova
 
 
 This project implements a pipeline to intelligently remove objects from images given a prompt of the format: `[class][location]`, e.g. "person at the center". 
-It leverages a U-Net-based model trained on the `[https://huggingface.co/datasets/paint-by-inpaint]` dataset to perform semantic segmentation, creating a mask of the object to be removed. Subsequently, a Diffusion inpainting model, finetuned with LoRA, uses this mask to generate realistic pixels, effectively erasing the object from the scene.
+It leverages a U-Net-based model trained on the `[https://huggingface.co/datasets/paint-by-inpaint]` dataset to perform semantic segmentation, creating a mask of the object to be removed. Subsequently, a Diffusion model, finetuned with LoRA, uses this mask to generate realistic pixels, effectively erasing the object from the scene.
 
 ---
 
