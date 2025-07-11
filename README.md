@@ -5,7 +5,7 @@ A deep learning project that demonstrates a two-stage pipeline for object remova
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 - [Project Description](#project-description)
 - [Features](#features)
 - [Project Structure](#project-structure)
@@ -40,7 +40,7 @@ It leverages a U-Net-based model trained on the `[https://huggingface.co/dataset
 
 The repository is organized as follows:
 
-
+```
 ├── notebooks/
 │   ├── 01_Dataset_Preparation.ipynb      # Loads, preprocesses, and prepares the dataset.
 │   ├── 02_Segmentation_Model.ipynb       # Builds, trains, and evaluates the U-Net model.
@@ -49,6 +49,7 @@ The repository is organized as follows:
 ├── paper/                                # Contains the paper of the project.
 ├── requirements/                         # Packages needed for the execution.
 └── README.md                             # This file.
+```
 
 
 ---
