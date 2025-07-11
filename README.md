@@ -1,4 +1,4 @@
-# AI-Powered Image Inpainting with Semantic Segmentation
+# Generative Image Inpainting for Text-Guided Object Removal
 
 
 A deep learning project that demonstrates a two-stage pipeline for object removal in images. The system first uses a semantic segmentation model to identify and mask target objects, and then employs a generative inpainting model to realistically fill in the removed areas.
