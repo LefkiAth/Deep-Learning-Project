@@ -1,11 +1,11 @@
-# AI-Powered Image Inpainting with Semantic Segmentation
+# Generative Image Inpainting for Text-Guided Object Removal
 
 
 A deep learning project that demonstrates a two-stage pipeline for object removal in images. The system first uses a semantic segmentation model to identify and mask target objects, and then employs a generative inpainting model to realistically fill in the removed areas.
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 - [Project Description](#project-description)
 - [Features](#features)
 - [Project Structure](#project-structure)
@@ -23,7 +23,7 @@ A deep learning project that demonstrates a two-stage pipeline for object remova
 
 
 This project implements a pipeline to intelligently remove objects from images given a prompt of the format: `[class][location]`, e.g. "person at the center". 
-It leverages a U-Net-based model trained on the `[https://huggingface.co/datasets/paint-by-inpaint]` dataset to perform semantic segmentation, creating a mask of the object to be removed. Subsequently, a Diffusion inpainting model, finetuned with LoRA, uses this mask to generate realistic pixels, effectively erasing the object from the scene.
+It leverages a U-Net-based model trained on the `[https://huggingface.co/datasets/paint-by-inpaint]` dataset to perform semantic segmentation, creating a mask of the object to be removed. Subsequently, a Diffusion model, finetuned with LoRA, uses this mask to generate realistic pixels, effectively erasing the object from the scene.
 
 ---
 
@@ -40,15 +40,17 @@ It leverages a U-Net-based model trained on the `[https://huggingface.co/dataset
 
 The repository is organized as follows:
 
-
+```
 ├── notebooks/
 │   ├── 01_Dataset_Preparation.ipynb      # Loads, preprocesses, and prepares the dataset.
 │   ├── 02_Segmentation_Model.ipynb       # Builds, trains, and evaluates the U-Net model.
 │   ├── 03_Inpainting_Model.ipynb         # Builds, trains, and evaluates the inpainting GAN.
 │   └── 04_Final_Pipeline_Demo.ipynb      # Runs the full pipeline on sample images.
+├── photos/                               # Contains 2 photos of the project implementation.
 ├── paper/                                # Contains the paper of the project.
 ├── requirements/                         # Packages needed for the execution.
 └── README.md                             # This file.
+```
 
 
 ---
@@ -87,7 +89,7 @@ Follow these instructions to get a copy of the project up and running on your lo
     ```sh
     pip freeze > requirements.txt
     ```
-    *(Now, anyone else can install the exact same packages using this command):*
+    *(Now, you can install the exact same packages using this command):*
     ```sh
     pip install -r requirements.txt
     ```
@@ -109,8 +111,8 @@ The project is demonstrated through a series of Jupyter notebooks. They are desi
 
 Here are some examples of the model's performance on test images.
 
-`![First_demo](deeplearning\photos\car_removal.png)`
-`![First_demo](deeplearning\photos\cars_removal.png)`
+![car_removal](photos/car_removal.png)
+![cars_removal](photos/cars_removal.png)
 
 ---
 
