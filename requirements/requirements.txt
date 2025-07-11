@@ -1,0 +1,13 @@
+torch
+torchvision
+Pillow
+numpy
+matplotlib
+diffusers
+transformers
+albumentations
+seaborn
+pandas
+datasets
+scikit-learn
+peft
