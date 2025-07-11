@@ -88,7 +88,7 @@ Follow these instructions to get a copy of the project up and running on your lo
     ```sh
     pip freeze > requirements.txt
     ```
-    *(Now, anyone else can install the exact same packages using this command):*
+    *(Now, you can install the exact same packages using this command):*
     ```sh
     pip install -r requirements.txt
     ```
